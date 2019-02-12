@@ -9,7 +9,9 @@ def roll(n):
 p1_score = 0
 p2_score = 0
 turn = 1
-while p1_score < 10000 and p2_score < 10000:
+# score played to
+lim = 10000
+while p1_score < lim and p2_score < lim:
     print("Player", turn, "'s turn.")
     dice = roll(6)
     dice.sort()
